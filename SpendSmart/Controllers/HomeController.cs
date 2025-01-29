@@ -8,9 +8,12 @@ namespace SpendSmart.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly SpendSmartDbContext _context;
+
+        public HomeController(ILogger<HomeController> logger, SpendSmartDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -28,6 +31,8 @@ namespace SpendSmart.Controllers
         }
         public IActionResult CreateEditExpensesForm(Expense mdoel)
         {
+            _context.Expenses.Add(mdoel);
+            _context.SaveChanges();
             return RedirectToAction("Index");
         }
 

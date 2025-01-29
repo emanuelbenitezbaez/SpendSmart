@@ -33,3 +33,17 @@ C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\SpendSmart.pdb
 C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\SpendSmart.genruntimeconfig.cache
 C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\ref\SpendSmart.dll
 C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\SpendSmart.sourcelink.json
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\SpendSmart.csproj.AssemblyReference.cache
+C:\Users\benit\Desktop\SpendSmart\SpendSmart\obj\Debug\net8.0\SpendSmart.csproj.Up2Date
