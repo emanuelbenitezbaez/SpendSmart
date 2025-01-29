@@ -22,6 +22,15 @@ namespace SpendSmart.Controllers
             return View();
         }
 
+        public IActionResult CreateEditExpenses()
+        {
+            return View();
+        }
+        public IActionResult CreateEditExpensesForm(Expense mdoel)
+        {
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();
