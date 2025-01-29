@@ -23,24 +23,62 @@ namespace SpendSmart.Controllers
         public IActionResult Expenses()
         {
             var allExpenses = _context.Expenses.ToList();
+            var totalExpenses = allExpenses.Sum(expen => expen.Value);
+            ViewBag.Expenses = totalExpenses;
             return View(allExpenses);
         }
 
-        public IActionResult CreateEditExpenses()
+        public IActionResult CreateEditExpenses(int? id)
         {
+
+            if (id != null)
+            {
+                //Editting
+                var expenseInDb = _context.Expenses.SingleOrDefault(expense => expense.Id == id);
+                return View(expenseInDb);
+            }
+
+
             return View();
-        }
-        public IActionResult CreateEditExpensesForm(Expense mdoel)
-        {
-            _context.Expenses.Add(mdoel);
-            _context.SaveChanges();
-            return RedirectToAction("Index");
         }
 
-        public IActionResult Privacy()
+        public IActionResult DeleteExpenses(int  id)
+        {
+            var expenseInDb = _context.Expenses.SingleOrDefault(expense => expense.Id == id ) ;
+
+            
+           
+                _context.Expenses.Remove(expenseInDb);
+                _context.SaveChanges();
+            
+
+            return RedirectToAction("Expenses");
+        }
+
+        public IActionResult CreateEditExpensesForm(Expense model)
+        {
+
+            if(model.Id == 0)
+            {
+
+                _context.Expenses.Add(model);
+               
+            }
+            else
+            {
+                _context.Expenses.Update(model);
+                
+            }
+
+            _context.SaveChanges();
+            return RedirectToAction("Expenses");
+        }
+
+       /* public IActionResult Privacy()
         {
             return View();
         }
+       */
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

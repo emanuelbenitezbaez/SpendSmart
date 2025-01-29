@@ -36,7 +36,7 @@ namespace SpendSmart
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Expenses}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }
