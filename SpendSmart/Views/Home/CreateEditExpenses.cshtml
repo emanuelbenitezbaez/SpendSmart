@@ -2,26 +2,21 @@
     ViewData["Title"] = "Create or edit an expense";
 }
 
-
-
 @model SpendSmart.Models.Expense
                                 
 <div class="text-center">
-   
     <a class="btn btn-primary" asp-controller="Home" asp-action="Expenses">Create or edit an expense.</a>
-
 </div>
 
-<form  asp-action="CreateEditExpensesForm" asp-controller="Home">
+<form asp-action="CreateEditExpensesForm" asp-controller="Home">
+    <label for="id">Id:</label>
+    <input class="form-control" type="number" placeholder="0" id="id" name="id" asp-for="Id">
 
-	<label for="id">Id:</label>
-	<input class="form-control" type="number" placeholder="0" id="id" name="id" asp-for=Id  >
+    <label for="value" class="mt-4">Value:</label>
+    <input class="form-control" type="number" placeholder="0" id="value" name="value" asp-for="Value" step="0.01">
 
-	<label for="value" class="mt-4">Value:</label>
-	<input class="form-control" type="number" placeholder="0" id="name" name="name" asp-for=Value step="0.01" >
+    <label for="description" class="mt-4">Description:</label>
+    <input class="form-control" type="text" placeholder="Add a description" id="description" name="description" asp-for="Description">
 
-	<label for="description" class="mt-4">Description:</label>
-	<input class="form-control" type="text" placeholder="Add a description" id="description" name="description" asp-for="Description" >
-
-	<button type="submit" class="btn btn-primary mt-4" >Submit</button>
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
 </form>
